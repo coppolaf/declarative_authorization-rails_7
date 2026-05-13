@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.files = %w[CHANGELOG MIT-LICENSE README.rdoc Rakefile authorization_rules.dist.rb garlic_example.rb init.rb] + Dir['app/**/*.rb'] + Dir['app/**/*.erb'] + Dir['config/*'] + Dir['lib/*.rb'] + Dir['lib/**/*.rb'] + Dir['lib/tasks/*'] + Dir['test/*']
   s.homepage = 'http://github.com/stffn/declarative_authorization'
 
-  s.add_dependency 'railties', '>= 4.1.0', '~> 7.1'
+  s.add_dependency 'railties', '>= 7.0', '< 8.0'
   s.add_dependency 'activerecord'
   s.add_dependency 'ruby_parser', '>= 3.6.6'
   s.add_development_dependency 'test-unit'
